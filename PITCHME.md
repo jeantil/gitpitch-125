@@ -9,6 +9,16 @@ case object None extends Option[Nothing]
 ```
 
 ---
+## Scala Generics code
+
+using github code blocks with non breaking space prefix
+
+```scala
+ sealed trait Option[+T]
+ case class Some[T](value:T) extends Option[T]
+ case object None extends Option[Nothing]
+```
+---
 
 ## Scala Generics code
 using std markdown code blocks
@@ -16,6 +26,14 @@ using std markdown code blocks
     sealed trait Option[+T]
     case class Some[T](value:T) extends Option[T]
     case object None extends Option[Nothing]
+---
+
+## Scala Generics code
+using std markdown code blocks with non breaking space prefix
+
+     sealed trait Option[+T]
+     case class Some[T](value:T) extends Option[T]
+     case object None extends Option[Nothing]
 
 ---
 ## Scala Generics code
