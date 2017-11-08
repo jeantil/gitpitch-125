@@ -119,10 +119,29 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
 * the non breaking space trick again 
 * the line between slide marker and @title again
 
++++
+
+    ---
+
+    @title[it has broken sublists]
+    ## it has broken  markdown 
+    
+    if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
+
+    * item 1
+      * item 2
+      * item 3
+    * item 1
+      * item 2
+      * item 3
+
+* the non breaking space trick again 
+* the line between slide marker and @title again
+
 ---
 @title[can't quote markdown]
 
-```markdown
+```markdon
 @title[can't quote markdown]
 ## it has working titles
 ```
