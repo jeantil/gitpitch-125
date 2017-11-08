@@ -4,7 +4,11 @@
 ---
 @title[working title]
 ## it has working titles
-
++++
+```
+@title[working title]
+## it has working titles
+```
 ---
 
 @title[working title 2]
