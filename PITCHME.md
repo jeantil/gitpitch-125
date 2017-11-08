@@ -1,148 +1,22 @@
-## gitpich is awesome
+## Scala Generics code
 
----
-@title[working title]
-## it has working titles
-
----
-
-@title[working title 2]
-
-## it is GFM compliant
-
----
-@title[it has code higlight]
-## it has code higlight
+using github code blocks
 
 ```scala
-object GitPitch{
-  val IsAwesome=true
-}
+sealed trait Option[+T]
+case class Some[T](value:T) extends Option[T]
+case object None extends Option[Nothing]
 ```
-+++
-
-But you can't quote it's own markup in code blocks
-
-```markdown
- ---
- @title[it has code higlight]
- ## it has code higlight
- 
- ```scala
- object GitPitch{
-   val IsAwesome=true
- }
- ``
-
-```
-
-To make the code display properly I had to :
-- put a non breaking space at each start of lines 
-- drop the last ` on the closing quoted code block
 
 ---
 
-@title[it has broken code higlight]
+## Scala Generics code
+using std markdown code blocks
 
-## it has broken code higlight
-
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
-+++
-
-```markdown
- ---
- 
- @title[it has broken code higlight]
- ## it has broken code higlight
- 
- ```scala
- object GitPitch{
-   val IsAwesome=true
- }
- ``
-
-```
-
-To make the code display properly I had to :
-- put a non breaking space at each start of lines 
-- drop the last ` on the closing quoted code block
-
-The difference with working sample is the line break between the slide marker and the @title.
+    sealed trait Option[+T]
+    case class Some[T](value:T) extends Option[T]
+    case object None extends Option[Nothing]
 
 ---
-@title[it has sublists]
-## is has nested lists
-
-* item 1
-  * item 2
-  * item 3
-* item 1
-  * item 2
-  * item 3
-
----
-
-@title[it has broken sublists]
-## it has broken  markdown
-
-if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
-
-* item 1
-  * item 2
-  * item 3
-* item 1
-  * item 2
-  * item 3
-
-+++
-
-```markdown
- ---
- 
- @title[it has broken sublists]
- ## it has broken  markdown
- 
- if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
-
- * item 1
-   * item 2
-   * item 3
- * item 1
-   * item 2
-   * item 3
- ```
-
-* the non breaking space trick again 
-* the line between slide marker and @title again
-
-+++
-
-    ---
-
-    @title[it has broken sublists]
-    ## it has broken  markdown 
-    
-    if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
-
-    * item 1
-      * item 2
-      * item 3
-    * item 1
-      * item 2
-      * item 3
-
-* the non breaking space trick again 
-* the line between slide marker and @title again
-
----
-@title[can't quote markdown]
-
-```markdon
-@title[can't quote markdown]
-## it has working titles
-```
-here is the result of a naive attempt at quoting markdown
+## Scala Generics code
+using pure marked.js + highlight.js [works fine](https://github.com/jeantil/gitpitch-125/blob/127/index.html) (download locally and open in browser to see) 
