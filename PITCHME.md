@@ -18,6 +18,15 @@ using github code blocks with non breaking space prefix
  case class Some[T](value:T) extends Option[T]
  case object None extends Option[Nothing]
 ```
+## Scala Generics code
+
+using github code blocks inserting space between type and constructor
+
+```scala
+sealed trait Option[+T]
+case class Some[T] (value:T) extends Option[T]
+case object None extends Option[Nothing]
+```
 ---
 
 ## Scala Generics code
