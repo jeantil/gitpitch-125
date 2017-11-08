@@ -41,16 +41,17 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
 
 ```scala
 object GitPitch{
- val IsAwesome=true
+  val IsAwesome=true
 }
 ```
 +++
 
 @title[it has broken code higlight]
+
 ## it has broken code higlight
 
 ```scala
 object GitPitch{
- val IsAwesome=true
+  val IsAwesome=true
 }
 ```
