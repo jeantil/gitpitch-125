@@ -24,9 +24,9 @@
 +++
 
 @title[it has broken sublists]
-## is has broken  nested lists
+## it has broken  markdown
 
-if you skip a line between the custom title and the markdown
+if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
 
 * item 1
   * item 2
@@ -37,7 +37,7 @@ if you skip a line between the custom title and the markdown
 
 +++
 @title[it has code higlight]
-## is has code higlight
+## it has code higlight
 
 ```scala
 object GitPitch{
@@ -47,7 +47,7 @@ object GitPitch{
 +++
 
 @title[it has broken code higlight]
-## is has broken code higlight
+## it has broken code higlight
 
 ```scala
 object GitPitch{
