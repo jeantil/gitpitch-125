@@ -1,19 +1,77 @@
-
 ## gitpich is awesome
 
 ---
 @title[working title]
 ## it has working titles
-+++
-```
-@title[working title]
-## it has working titles
-```
+
 ---
 
 @title[working title 2]
 
 ## it is GFM compliant
+
+---
+@title[it has code higlight]
+## it has code higlight
+
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
++++
+
+But you can't quote it's own markup in code blocks
+
+```markdown
+ ---
+ @title[it has code higlight]
+ ## it has code higlight
+ 
+ ```scala
+ object GitPitch{
+   val IsAwesome=true
+ }
+ ``
+
+```
+
+To make the code display properly I had to :
+- put a non breaking space at each start of lines 
+- drop the last ` on the closing quoted code block
+
+---
+
+@title[it has broken code higlight]
+
+## it has broken code higlight
+
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
++++
+
+```markdown
+ ---
+ 
+ @title[it has broken code higlight]
+ ## it has broken code higlight
+ 
+ ```scala
+ object GitPitch{
+   val IsAwesome=true
+ }
+ ``
+
+```
+
+To make the code display properly I had to :
+- put a non breaking space at each start of lines 
+- drop the last ` on the closing quoted code block
+
+The difference with working sample is the line break between the slide marker and the @title.
 
 ---
 @title[it has sublists]
@@ -25,6 +83,7 @@
 * item 1
   * item 2
   * item 3
+
 ---
 
 @title[it has broken sublists]
@@ -39,23 +98,23 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
   * item 2
   * item 3
 
----
-@title[it has code higlight]
-## it has code higlight
++++
 
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
----
+```markdown
+ ---
+ 
+ @title[it has broken sublists]
+ ## it has broken  markdown
+ 
+ if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
 
-@title[it has broken code higlight]
+ * item 1
+   * item 2
+   * item 3
+ * item 1
+   * item 2
+   * item 3
+ ```
 
-## it has broken code higlight
-
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
+* the non breaking space trick again 
+* the line between slide marker and @title again
