@@ -118,3 +118,12 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
 
 * the non breaking space trick again 
 * the line between slide marker and @title again
+
+---
+@title[can't quote markdown]
+
+```markdown
+@title[can't quote markdown]
+## it has working titles
+```
+here is the result of a naive attempt at quoting markdown
