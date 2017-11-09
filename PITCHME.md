@@ -138,8 +138,11 @@ baz is oof
 ## it has code delimiter slides
 
 +++?code=md_indented.md
-+++?code=md_indented.md?lang=markdown
+* only displays the first 2 backticks
+* doesn`t display the closing backticks
 
++++?code=md_indented.md?lang=markdown
+* works fine
 +++
 
 log error :
