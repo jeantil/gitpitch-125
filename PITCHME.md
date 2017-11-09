@@ -137,13 +137,8 @@ baz is oof
 
 ## it has code delimiter slides
 
----?code=md_indented.md
-
-+++
-
-## it has code delimiter slides
-
----?code=md_indented.md?lang=markdown
++++?code=md_indented.md
++++?code=md_indented.md?lang=markdown
 
 +++
 
@@ -174,11 +169,7 @@ Caused by: java.net.MalformedURLException: QueryString parameter should not have
 	at com.gitpitch.models.MarkdownModel.lambda$new$0(MarkdownModel.java:111)
 ```
 
-+++
-
-## it has code delimiter slides
-
----?code=md_backticked.md
++++?code=md_backticked.md
 
 ---
 
