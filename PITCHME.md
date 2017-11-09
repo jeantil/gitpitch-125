@@ -137,13 +137,48 @@ baz is oof
 
 ## it has code delimiter slides
 
----?code=md_indented.md?lang=markdown
+---?code=md_indented.md
 
 +++
 
 ## it has code delimiter slides
 
----?code=md_backticked.md?lang=markdown
+---?code=md_indented.md?lang=markdown
+
++++
+
+log error :
+```
+2017-11-09 08:54:26,502 Back-End-Pool [warn] c.g.s.WebService - download: failed pp=/github/jeantil/gitpitch-125/126 [ white, null ], from source=https://raw.githubusercontent.com/jeantil/gitpitch-125/126/md_backticked.md?lang=markdown?gp=25, ex={}
+java.lang.RuntimeException: java.net.MalformedURLException: QueryString parameter should not have more than 2 = per part
+	at play.libs.ws.ahc.AhcWSRequest.setQueryString(AhcWSRequest.java:106)
+	at play.libs.ws.ahc.AhcWSRequest.<init>(AhcWSRequest.java:78)
+	at play.libs.ws.ahc.AhcWSClient.url(AhcWSClient.java:38)
+	at com.gitpitch.services.WebService.download(WebService.java:109)
+	at com.gitpitch.services.WebService.fetchBytes(WebService.java:60)
+	at com.gitpitch.services.DiskService.download(DiskService.java:155)
+	at com.gitpitch.git.GRSService.download(GRSService.java:81)
+	at com.gitpitch.services.CodeService.build(CodeService.java:82)
+	at com.gitpitch.models.MarkdownModel.process(MarkdownModel.java:183)
+	at com.gitpitch.models.MarkdownModel.lambda$new$0(MarkdownModel.java:111)
+Caused by: java.net.MalformedURLException: QueryString parameter should not have more than 2 = per part
+	at play.libs.ws.ahc.AhcWSRequest.setQueryString(AhcWSRequest.java:106)
+	at play.libs.ws.ahc.AhcWSRequest.<init>(AhcWSRequest.java:78)
+	at play.libs.ws.ahc.AhcWSClient.url(AhcWSClient.java:38)
+	at com.gitpitch.services.WebService.download(WebService.java:109)
+	at com.gitpitch.services.WebService.fetchBytes(WebService.java:60)
+	at com.gitpitch.services.DiskService.download(DiskService.java:155)
+	at com.gitpitch.git.GRSService.download(GRSService.java:81)
+	at com.gitpitch.services.CodeService.build(CodeService.java:82)
+	at com.gitpitch.models.MarkdownModel.process(MarkdownModel.java:183)
+	at com.gitpitch.models.MarkdownModel.lambda$new$0(MarkdownModel.java:111)
+```
+
++++
+
+## it has code delimiter slides
+
+---?code=md_backticked.md
 
 ---
 
