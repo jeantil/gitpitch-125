@@ -70,51 +70,7 @@ baz is oof
 * using indented code block (4 spaces) fences
 
 ---
-## it has backtick fenced code blocks
 
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
-
-+++
-
-#### Quoting markdown whith fenced code blocks
-
-```markdown
----
-## it has code higlight
- 
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
-```
-* no @title
-* nested backtick fenced block
-
-+++
-
-#### Quoting markdown whith fenced code blocks
-
-
-    ---
-    ## it has code higlight
-    
-    ```scala
-    object GitPitch{
-      val IsAwesome=true
-    }
-    ```
-
-* no @title
-* indented code block
-
-+++ 
-
----
 ## it has indented code blocks
 
 
@@ -152,3 +108,64 @@ object GitPitch{
 
 * no @title
 * indented code block within a indented code block
+
+---
+
+## it has backtick fenced code blocks
+
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
+
++++
+
+#### Quoting markdown whith fenced code blocks
+
+
+    ---
+    ## it has code higlight
+    
+    ```scala
+    object GitPitch{
+      val IsAwesome=true
+    }
+    ```
+
+* no @title
+* indented code block
+
+#### Quoting markdown whith fenced code blocks
+
+```markdown
+ ---
+ ## it has code higlight
+  
+ ```scala
+ object GitPitch{
+   val IsAwesome=true
+ }
+ ```
+```
+* no @title
+* nested backtick fenced block
+* non-breaking space prefix
++++
+
+#### Quoting markdown whith fenced code blocks
+
+```markdown
+---
+## it has code higlight
+ 
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
+```
+* no @title
+* nested backtick fenced block
+
++++
