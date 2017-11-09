@@ -172,6 +172,20 @@ Caused by: java.net.MalformedURLException: QueryString parameter should not have
 	at com.gitpitch.models.MarkdownModel.lambda$new$0(MarkdownModel.java:111)
 ```
 
++++
+
+Actual error
+
+```
+https://raw.githubusercontent.com/jeantil/gitpitch-125/126/md_backticked.md?lang=markdown?gp=25
+```
+
+Double question marks are invalid
+
+```
+md_backticked.md?lang=markdown?gp=25
+```
+
 +++?code=md_backticked.md
 
 ---
