@@ -19,6 +19,7 @@ object GitPitch{
   val IsAwesome=true
 }
 ```
+
 +++
 
 But you can't quote it's own markup in code blocks
@@ -83,13 +84,11 @@ The difference with working sample is the line break between the slide marker an
 * item 1
   * item 2
   * item 3
-
 ---
 
-@title[it has broken sublists]
-## it has broken  markdown
+@title[it has sublists]
+## is has nested lists
 
-if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
 
 * item 1
   * item 2
@@ -97,46 +96,7 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
 * item 1
   * item 2
   * item 3
-
-+++
-
-```markdown
- ---
- 
- @title[it has broken sublists]
- ## it has broken  markdown
- 
- if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
-
- * item 1
-   * item 2
-   * item 3
- * item 1
-   * item 2
-   * item 3
- ```
-
-* the non breaking space trick again 
-* the line between slide marker and @title again
-
-+++
-
-    ---
-
-    @title[it has broken sublists]
-    ## it has broken  markdown 
-    
-    if you skip a line between the custom title, the markdown renderer is unahppy and treats double spaces as a line break.
-
-    * item 1
-      * item 2
-      * item 3
-    * item 1
-      * item 2
-      * item 3
-
-* the non breaking space trick again 
-* the line between slide marker and @title again
+* event when skipping a line before @title
 
 ---
 @title[can't quote markdown]
