@@ -1,6 +1,5 @@
-## it has backtick fenced code blocks
+## it has idented fenced code blocks
 
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
+    object GitPitch{
+      val IsAwesome=true
+    }
