@@ -1,108 +1,154 @@
 ## gitpich is awesome
+--- 
+@title[it renders simple markdow]
+## it renders markdown
+
+foo is bar
+
+baz is oof
+
+* item list
+* item list
+
++++ 
+#### The markdown for the above slide
+```markdown
+@title[it renders simple markdow]
+## it renders markdown
+
+foo is bar
+
+baz is oof
+
+* item list
+* item list
+```
+* using backtick fences
++++
+#### The markdown for the above slide no @title
+```markdown
+## it renders markdown
+
+foo is bar
+
+baz is oof
+
+* item list
+* item list
+```
+* using backtick fences
+
++++
+
+#### The markdown for the above slide
+
+    @title[it renders simple markdow]
+    ## it renders markdown
+
+    foo is bar
+
+    baz is oof
+
+    * item list
+    * item list
+
+* using indented code block (4 spaces) fences
+
++++
+
+#### The markdown for the above slide no @title
+  
+    ## it renders markdown
+
+    foo is bar
+
+    baz is oof
+
+    * item list
+    * item list
+
+* using indented code block (4 spaces) fences
 
 ---
-@title[working title]
-## it has working titles
+## it has backtick fenced code blocks
 
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
+
++++
+
+#### Quoting markdown whith fenced code blocks
+
+```markdown
 ---
-
-@title[working title 2]
-
-## it is GFM compliant
-
----
-@title[it has code higlight]
 ## it has code higlight
-
+ 
 ```scala
 object GitPitch{
   val IsAwesome=true
 }
 ```
+```
+* no @title
+* nested backtick fenced block
 
 +++
 
-But you can't quote it's own markup in code blocks
+#### Quoting markdown whith fenced code blocks
 
-```markdown
- ---
- @title[it has code higlight]
- ## it has code higlight
- 
- ```scala
- object GitPitch{
-   val IsAwesome=true
- }
- ```
 
-```
+    ---
+    ## it has code higlight
+    
+    ```scala
+    object GitPitch{
+      val IsAwesome=true
+    }
+    ```
 
-To make the code display properly I had to :
-- put a non breaking space at each start of lines 
-- drop the last ` on the closing quoted code block
+* no @title
+* indented code block
+
++++ 
 
 ---
+## it has indented code blocks
 
-@title[it has broken code higlight]
 
-## it has broken code higlight
+    object GitPitch{
+      val IsAwesome=true
+    }
 
-```scala
-object GitPitch{
-  val IsAwesome=true
-}
-```
 +++
 
-```markdown
- ---
- 
- @title[it has broken code higlight]
- ## it has broken code higlight
- 
- ```scala
- object GitPitch{
-   val IsAwesome=true
- }
- ``
-
-```
-
-To make the code display properly I had to :
-- put a non breaking space at each start of lines 
-- drop the last ` on the closing quoted code block
-
-The difference with working sample is the line break between the slide marker and the @title.
-
----
-@title[it has sublists]
-## is has nested lists
-
-* item 1
-  * item 2
-  * item 3
-* item 1
-  * item 2
-  * item 3
----
-
-@title[it has sublists]
-## is has nested lists
-
-
-* item 1
-  * item 2
-  * item 3
-* item 1
-  * item 2
-  * item 3
-* event when skipping a line before @title
-
----
-@title[can't quote markdown]
+#### Quoting markdown whith indented code blocks
 
 ```markdown
-@title[can't quote markdown]
-## it has working titles
+---
+## it has code higlight
+    
+    object GitPitch{
+      val IsAwesome=true
+    }
 ```
-here is the result of a naive attempt at quoting markdown
+
+* no @title
+* indented code block within a fenced code block
+
++++
+
+#### Quoting markdown whith indented code blocks
+
+
+    ---
+    ## it has code higlight
+    
+        object GitPitch{
+          val IsAwesome=true
+        }
+
+* no @title
+* indented code block within a indented code block
