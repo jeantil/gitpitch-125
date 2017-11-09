@@ -83,11 +83,12 @@ baz is oof
 
 
     ---
-    ## it has code higlight
+    ## should be quoted
     
         object GitPitch{
           val IsAwesome=true
         }
+    ## end of quote    
 
 * no @title
 * indented code block within a indented code block
@@ -98,16 +99,17 @@ baz is oof
 
 ```markdown
  ---
- ## it has indented code blocks
+## should be quoted
      
      object GitPitch{
        val IsAwesome=true
      }
+## end of quote
 ```
 
 * no @title
 * indented code block within a fenced code block
-* non breaking space prefix
+* non breaking space prefix on first line
 
 +++
 
@@ -115,18 +117,22 @@ baz is oof
 
 ```markdown
 ---
-## it has indented code blocks
+## should be quoted
     
     object GitPitch{
       val IsAwesome=true
     }
+## end of quote    
 ```
 
 * no @title
 * indented code block within a fenced code block
-+++ 
 
-prevent breakage propagatation 
++++
+
+```scala
+ prevent breakage propagatation 
+```
 
 ---
 
