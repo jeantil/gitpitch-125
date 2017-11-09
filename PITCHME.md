@@ -140,7 +140,7 @@ baz is oof
 +++?code=md_indented.md
 * works fine
 
-+++?code=md_indented.md?lang=markdown
++++?code=md_indented.md&lang=markdown
 * doesn't render because of lang hint
 ````
 ?lang=markdown
