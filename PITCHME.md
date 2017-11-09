@@ -141,7 +141,7 @@ if you skip a line between the custom title, the markdown renderer is unahppy an
 ---
 @title[can't quote markdown]
 
-```markdon
+```markdown
 @title[can't quote markdown]
 ## it has working titles
 ```
