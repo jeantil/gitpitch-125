@@ -161,6 +161,8 @@ object GitPitch{
 * no @title
 * indented code block
 
++++
+
 #### Quoting markdown whith fenced code blocks
 
 ```markdown
@@ -175,7 +177,26 @@ object GitPitch{
 ```
 * no @title
 * nested backtick fenced block
-* non-breaking space prefix
+* non-breaking space prefix on all lines
+
++++ 
+#### Quoting markdown whith fenced code blocks
+
+```markdown
+ ---
+## it has code higlight
+
+```scala
+object GitPitch{
+  val IsAwesome=true
+}
+```
+```
+
+* no @title
+* nested backtick fenced block
+* non-breaking space prefix on first lines
+
 +++
 
 #### Quoting markdown whith fenced code blocks
@@ -192,5 +213,3 @@ object GitPitch{
 ```
 * no @title
 * nested backtick fenced block
-
-+++
