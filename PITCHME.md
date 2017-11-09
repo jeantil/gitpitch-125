@@ -73,26 +73,9 @@ baz is oof
 
 ## it has indented code blocks
 
-
     object GitPitch{
       val IsAwesome=true
     }
-
-+++
-
-#### Quoting markdown whith indented code blocks
-
-```markdown
----
-## it has code higlight
-    
-    object GitPitch{
-      val IsAwesome=true
-    }
-```
-
-* no @title
-* indented code block within a fenced code block
 
 +++
 
@@ -108,6 +91,42 @@ baz is oof
 
 * no @title
 * indented code block within a indented code block
+
++++
+
+#### Quoting markdown whith indented code blocks
+
+```markdown
+ ---
+ ## it has indented code blocks
+     
+     object GitPitch{
+       val IsAwesome=true
+     }
+```
+
+* no @title
+* indented code block within a fenced code block
+* non breaking space prefix
+
++++
+
+#### Quoting markdown whith indented code blocks
+
+```markdown
+---
+## it has indented code blocks
+    
+    object GitPitch{
+      val IsAwesome=true
+    }
+```
+
+* no @title
+* indented code block within a fenced code block
++++ 
+
+prevent breakage propagatation 
 
 ---
 
