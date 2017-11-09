@@ -133,6 +133,17 @@ baz is oof
 ```scala
  prevent breakage propagatation 
 ```
+---
+
+## it has code delimiter slides
+
+---?code=md_indented.md?lang=markdown
+
++++
+
+## it has code delimiter slides
+
+---?code=md_backticked.md?lang=markdown
 
 ---
 
